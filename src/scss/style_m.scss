@@ -1,7 +1,7 @@
 /********************** 
 * val
 ***********************/
-$f-m : 'Karla', sans-serif;
+$f-m : 'Montserrat', sans-serif;
 $f-p : 'Playfair Display', serif;
 $f-n : 'NanumBrunGothic', serif;
 
@@ -11,25 +11,116 @@ $f-n : 'NanumBrunGothic', serif;
 div.wrapper {
     position: relative;
     margin: 0 auto;
+
+    .en {font-family: $f-m;}
     
     section {
 
+        div.inner-img img {width: 100%;}
     }
 
     a.skyscrapper {
         position: fixed;
-        width: 30px; height: 30px;
-        background: gray;
-        right: 10px;
-        bottom: 20px;
+        width: 40px; height: 40px;
+        background: url('../img/mobile/icon_skyscrapper.png') 0 0 no-repeat;
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto;
+        right: 20px; bottom: 20px;
         z-index: 10;
-    } 
+    }
+    
+    h2.sub-tit {
+        font-size: 32px; color: #362d2a;
+        font-family: $f-m; line-height: 23px;
+        font-weight: 100;
+        padding-left: 23px;
+    }
+
+    div.area1 {
+        p {
+            text-align: right;
+            line-height: 20px;
+            font-size: 13px; color: #333;
+            padding: 41px 20px 56px 0;
+        }
+    }
+    div.area2 {
+        p.tt1 {
+            font-size: 14px;
+            padding: 45px 25px 32px 25px;
+        }
+        p.ct1 {
+            font-size: 12px;
+            padding: 0 25px 0 25px;
+            line-height: 18px;
+        }
+        p.ct2 {
+            font-size: 12px;
+            padding: 30px 25px 0 25px;
+            line-height: 18px;
+        }
+        p.ct3 {
+            font-size: 12px;
+            padding: 30px 25px 70px 25px;
+            line-height: 18px;
+        }
+    }
+    div.area3 {
+        padding-bottom: 70px; 
+
+        p.tt1 {
+            font-size: 14px;
+            padding: 45px 25px 15px 25px;
+        }
+        p.ct1 {
+            font-size: 12px;
+            padding: 0 25px 0 25px;
+            line-height: 18px;
+        }
+        p.ct2 {
+            font-size: 12px;
+            padding: 15px 25px 0 25px;
+            line-height: 18px;
+        }
+        p.ct3 {
+            font-size: 12px;
+            padding: 15px 25px 0px 25px;
+            line-height: 18px;
+        }
+        p.ct4 {
+            font-size: 12px;
+            padding: 15px 25px 0 25px;
+        }
+    }
+    div.area4 {
+
+    }
 }
 
 /********************** 
 * header
 ***********************/
 header {
+    div.nav {
+        text-align: center;
+
+        h1 {
+            width: 94px; height: 73px;
+            text-indent: -9999px;
+            background: url('../img/mobile/logo.png') 0 25px no-repeat;
+            -webkit-background-size: 100% auto;
+            background-size: 100% auto;
+            margin: 0 auto;
+        }
+
+        a {
+            display: inline-block;
+            font-size: 14px;
+            padding: 0 10px;
+            font-family: $f-m;
+            color: #222;
+        }
+    }
     div.fixed-nav {
         position: fixed;
         width: 100%;
@@ -50,7 +141,22 @@ header {
 * footer
 ***********************/
 footer {
+    height: 160px;
+    background: #222222;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    line-height: 16px;
+    padding-top: 42px;
 
+    span.copy {
+        display: inline-block;
+        width: 80px; height: 24px;
+        background: url('../img/mobile/copy_logo.png') 0 0 no-repeat;
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto;
+        margin: 0 auto 14px auto;
+    }
 }
 
 /********************** 

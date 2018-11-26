@@ -1,5 +1,5 @@
 /* ***************  global *************** */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,400,600");
 * {
   box-sizing: border-box; }
 
@@ -244,18 +244,89 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 div.wrapper {
   position: relative;
   margin: 0 auto; }
+  div.wrapper .en {
+    font-family: "Montserrat", sans-serif; }
+  div.wrapper section div.inner-img img {
+    width: 100%; }
   div.wrapper a.skyscrapper {
     position: fixed;
-    width: 30px;
-    height: 30px;
-    background: gray;
-    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/mobile/icon_skyscrapper.png") 0 0 no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    right: 20px;
     bottom: 20px;
     z-index: 10; }
+  div.wrapper h2.sub-tit {
+    font-size: 32px;
+    color: #362d2a;
+    font-family: "Montserrat", sans-serif;
+    line-height: 23px;
+    font-weight: 100;
+    padding-left: 23px; }
+  div.wrapper div.area1 p {
+    text-align: right;
+    line-height: 20px;
+    font-size: 13px;
+    color: #333;
+    padding: 41px 20px 56px 0; }
+  div.wrapper div.area2 p.tt1 {
+    font-size: 14px;
+    padding: 45px 25px 32px 25px; }
+  div.wrapper div.area2 p.ct1 {
+    font-size: 12px;
+    padding: 0 25px 0 25px;
+    line-height: 18px; }
+  div.wrapper div.area2 p.ct2 {
+    font-size: 12px;
+    padding: 30px 25px 0 25px;
+    line-height: 18px; }
+  div.wrapper div.area2 p.ct3 {
+    font-size: 12px;
+    padding: 30px 25px 70px 25px;
+    line-height: 18px; }
+  div.wrapper div.area3 {
+    padding-bottom: 70px; }
+    div.wrapper div.area3 p.tt1 {
+      font-size: 14px;
+      padding: 45px 25px 15px 25px; }
+    div.wrapper div.area3 p.ct1 {
+      font-size: 12px;
+      padding: 0 25px 0 25px;
+      line-height: 18px; }
+    div.wrapper div.area3 p.ct2 {
+      font-size: 12px;
+      padding: 15px 25px 0 25px;
+      line-height: 18px; }
+    div.wrapper div.area3 p.ct3 {
+      font-size: 12px;
+      padding: 15px 25px 0px 25px;
+      line-height: 18px; }
+    div.wrapper div.area3 p.ct4 {
+      font-size: 12px;
+      padding: 15px 25px 0 25px; }
 
 /********************** 
 * header
 ***********************/
+header div.nav {
+  text-align: center; }
+  header div.nav h1 {
+    width: 94px;
+    height: 73px;
+    text-indent: -9999px;
+    background: url("../img/mobile/logo.png") 0 25px no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    margin: 0 auto; }
+  header div.nav a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 10px;
+    font-family: "Montserrat", sans-serif;
+    color: #222; }
+
 header div.fixed-nav {
   position: fixed;
   width: 100%;
@@ -272,6 +343,23 @@ header div.fixed-nav {
 /********************** 
 * footer
 ***********************/
+footer {
+  height: 160px;
+  background: #222222;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  line-height: 16px;
+  padding-top: 42px; }
+  footer span.copy {
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    background: url("../img/mobile/copy_logo.png") 0 0 no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    margin: 0 auto 14px auto; }
+
 /********************** 
 * globals
 ***********************/
