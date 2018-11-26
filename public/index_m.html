@@ -12,24 +12,58 @@
 <body>
     
 <div class="wrapper">
+    <a href="#" class="skyscrapper"></a>
+
     <!-- header -->
     <header class="clearfix">
-        m
+        <div class="fixed-nav">
+            <a href="#" id="hi">hi there</a>
+        </div>
     </header>
 
     <!-- section -->
-    <section>
+    <section style="width: 100%; height: 1000px;">
+        a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />
+        a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />
+        a<br />a<br />a<br />a<br />a<br />
+        a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />
+        a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />
+        a<br />a<br />a<br />a<br />a<br />a<br />a<br />
+        a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />
+        <a name="hi" />hi there<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />
+        a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />
+        a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />
+        a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />
+        a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />
+        a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />
+
+        <div class="map-area">
+            <div id="corelle-location" style="width:100%; height:200px;"></div>
+        </div>
 
     </section>
 
     <!-- footer -->
     <footer>
-        
+
     </footer>
 </div>
 
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=1hLrIsOUHkXF_ACFBIIy&submodules=geocoder"></script>
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/js/custom_m.js"></script>
+<script>
+var mapOptions = {
+    center: new naver.maps.LatLng(37.5077098, 127.0620395),
+    zoom: 10
+};
+var map = new naver.maps.Map('corelle-location', mapOptions);
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.5077098, 127.0620395),
+    map: map
+});
+var latlng = map.getCenter();
+</script>
 </body>
 </html>

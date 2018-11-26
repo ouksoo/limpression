@@ -2,7 +2,40 @@
 
 var LIM = {
     init: function init() {
-        console.log('lim init mobile');
+        this.skyScrapper();
+        this.moveToId();
+    },
+    scollDown: function scollDown() {
+        var scrolled = $(document).scrollTop();
+        if (scrolled > 0) {
+            $('.fixed-nav').addClass('scrolled');
+        } else {
+            $('.fixed-nav').removeClass('scrolled');
+        }
+    },
+    skyScrapper: function skyScrapper() {
+        $('a.skyscrapper').on('click', function (e) {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800, function () {
+                console.log('top');
+            });
+            e.preventDefault();
+        });
+    },
+    moveToId: function moveToId() {
+        $('.fixed-nav a').on('click', function (e) {
+            var thisAnchor = $(this).attr('id');
+            // console.log(thisAnchor);
+            LIM.moveToAnchor(thisAnchor);
+            e.preventDefault();
+        });
+    },
+    moveToAnchor: function moveToAnchor(aid) {
+        var aTag = $('a[name="' + aid + '"]');
+        $('html, body').animate({
+            scrollTop: aTag.offset().top
+        }, 500, function () {});
     }
 
     // after loaded execute
@@ -15,3 +48,7 @@ var LIM = {
         duration: 1000
     });
 };
+
+$(window).scroll(function (e) {
+    LIM.scollDown();
+});

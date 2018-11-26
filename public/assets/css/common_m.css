@@ -244,10 +244,31 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 div.wrapper {
   position: relative;
   margin: 0 auto; }
+  div.wrapper a.skyscrapper {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: gray;
+    right: 10px;
+    bottom: 20px;
+    z-index: 10; }
 
 /********************** 
 * header
 ***********************/
+header div.fixed-nav {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: -60px;
+  left: 0;
+  background: gray;
+  -webkit-transition: top .3s ease-in-out;
+  transition: top .3s ease-in-out;
+  z-index: 10; }
+  header div.fixed-nav.scrolled {
+    top: 0; }
+
 /********************** 
 * footer
 ***********************/
