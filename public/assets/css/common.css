@@ -1,5 +1,5 @@
 /* ***************  global *************** */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,400,600");
 * {
   box-sizing: border-box; }
 
@@ -243,14 +243,212 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 ***********************/
 div.wrapper {
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-width: 1600px; }
+  div.wrapper .en {
+    font-family: "Montserrat", sans-serif; }
+  div.wrapper section div.inner-img img {
+    width: 100%; }
+  div.wrapper a.skyscrapper {
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    right: 20px;
+    bottom: 230px;
+    z-index: 10; }
+  div.wrapper h2.sub-tit {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 60px;
+    color: #362d2a;
+    font-family: "Montserrat", sans-serif;
+    line-height: 42px;
+    font-weight: 100; }
+  div.wrapper div.area1 p {
+    text-align: right;
+    line-height: 24px;
+    font-size: 12px;
+    color: #333;
+    padding: 80px 0px 130px 0;
+    width: 1200px;
+    margin: 0 auto; }
+  div.wrapper div.area2 {
+    position: relative;
+    padding-bottom: 270px; }
+    div.wrapper div.area2 div.area2-wrap {
+      position: absolute;
+      top: 41%;
+      left: 34%;
+      width: 693px;
+      height: 706px;
+      color: #fff;
+      transform: translate(-50%, -50%);
+      letter-spacing: 1px; }
+      div.wrapper div.area2 div.area2-wrap div.inner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #362d2a;
+        opacity: .9;
+        z-index: 0; }
+      div.wrapper div.area2 div.area2-wrap p.tt1 {
+        position: relative;
+        font-size: 14px;
+        padding: 40px 40px 15px 40px; }
+      div.wrapper div.area2 div.area2-wrap p.ct1 {
+        position: relative;
+        font-size: 12px;
+        padding: 0 40px 0 40px;
+        line-height: 15px; }
+      div.wrapper div.area2 div.area2-wrap p.ct2 {
+        position: relative;
+        font-size: 12px;
+        padding: 23px 40px 0 40px;
+        line-height: 15px; }
+      div.wrapper div.area2 div.area2-wrap p.ct3 {
+        position: relative;
+        font-size: 12px;
+        padding: 23px 40px 70px 40px;
+        line-height: 15px; }
+  div.wrapper div.area3 {
+    position: relative;
+    padding-bottom: 270px; }
+    div.wrapper div.area3 div.area3-wrap {
+      position: absolute;
+      top: 41%;
+      left: 64%;
+      width: 755px;
+      height: 310px;
+      color: #fff;
+      transform: translate(-50%, -50%);
+      letter-spacing: 1px; }
+      div.wrapper div.area3 div.area3-wrap div.inner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #362d2a;
+        opacity: .9;
+        z-index: 0; }
+      div.wrapper div.area3 div.area3-wrap p.tt1 {
+        position: relative;
+        font-size: 14px;
+        padding: 40px 40px 15px 40px; }
+      div.wrapper div.area3 div.area3-wrap p.ct1 {
+        position: relative;
+        font-size: 12px;
+        padding: 0 40px 0 40px;
+        line-height: 15px; }
+      div.wrapper div.area3 div.area3-wrap p.ct2 {
+        position: relative;
+        font-size: 12px;
+        padding: 5px 40px 0 40px;
+        line-height: 15px; }
+      div.wrapper div.area3 div.area3-wrap p.ct3 {
+        position: relative;
+        font-size: 12px;
+        padding: 5px 40px 0px 40px;
+        line-height: 15px; }
+      div.wrapper div.area3 div.area3-wrap p.ct4 {
+        position: relative;
+        font-size: 12px;
+        padding: 15px 40px 0 40px; }
+  div.wrapper div.area4 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 60px; }
+    div.wrapper div.area4 h2 {
+      text-align: left; }
+    div.wrapper div.area4 div.area4-wrap {
+      width: 1200px;
+      margin: 0 auto;
+      padding-top: 40px; }
+      div.wrapper div.area4 div.area4-wrap li {
+        float: left;
+        height: 155px;
+        background: url("../img/pc/icon_line.png") 100% 75px no-repeat; }
+        div.wrapper div.area4 div.area4-wrap li:last-child {
+          background-image: none; }
+        div.wrapper div.area4 div.area4-wrap li span.spot-1 {
+          display: block;
+          padding-bottom: 5px; }
+        div.wrapper div.area4 div.area4-wrap li div.address {
+          float: left;
+          width: 438px;
+          padding-top: 82px;
+          background: url("../img/pc/icon_indicator.png") 50% 40px no-repeat; }
+        div.wrapper div.area4 div.area4-wrap li div.hours {
+          float: left;
+          width: 332px;
+          padding-top: 82px;
+          background: url("../img/pc/icon_watch.png") 50% 40px no-repeat; }
+        div.wrapper div.area4 div.area4-wrap li div.reserve.f {
+          float: left;
+          width: 215px;
+          padding-top: 82px;
+          background: url("../img/pc/icon_phone.png") 50% 40px no-repeat; }
+        div.wrapper div.area4 div.area4-wrap li div.reserve.s {
+          float: left;
+          width: 215px;
+          padding-top: 82px;
+          background: url("../img/pc/icon_insta.png") 50% 40px no-repeat; }
+          div.wrapper div.area4 div.area4-wrap li div.reserve.s a {
+            text-decoration: underline;
+            color: #333; }
+  div.wrapper div.map-area {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 100px 0; }
+    div.wrapper div.map-area img {
+      width: 100%; }
 
 /********************** 
 * header
 ***********************/
+header {
+  position: absolute;
+  z-index: 10;
+  width: 1200px;
+  top: 32px;
+  left: 50%;
+  margin-left: -600px; }
+  header div.nav h1 {
+    float: left; }
+  header div.nav div.gnb {
+    float: left;
+    margin: 15px 0 0 75px; }
+    header div.nav div.gnb a {
+      display: inline-block;
+      font-size: 12px;
+      margin-right: 47px;
+      font-family: "Montserrat", sans-serif;
+      color: #222; }
+      header div.nav div.gnb a:hover {
+        text-decoration: underline; }
+
 /********************** 
 * footer
 ***********************/
+footer {
+  height: 210px;
+  background: #222222;
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 80px;
+  font-family: "Montserrat", sans-serif; }
+  footer div.copy {
+    width: 1200px;
+    margin: 0 auto; }
+    footer div.copy span.copy {
+      float: left;
+      display: inline-block;
+      margin: 0 auto 14px auto; }
+    footer div.copy p.add {
+      float: left;
+      margin: 5px 0 0 66px; }
+
 /********************** 
 * globals
 ***********************/

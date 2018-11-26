@@ -41,10 +41,12 @@ div.wrapper {
             text-align: right;
             line-height: 20px;
             font-size: 13px; color: #333;
-            padding: 41px 20px 56px 0;
+            padding: 41px 20px 0px 0;
         }
     }
     div.area2 {
+        padding-top: 56px;
+
         p.tt1 {
             font-size: 14px;
             padding: 45px 25px 32px 25px;
@@ -61,11 +63,12 @@ div.wrapper {
         }
         p.ct3 {
             font-size: 12px;
-            padding: 30px 25px 70px 25px;
+            padding: 30px 25px 0px 25px;
             line-height: 18px;
         }
     }
     div.area3 {
+        padding-top: 70px;
         padding-bottom: 70px; 
 
         p.tt1 {
@@ -93,7 +96,53 @@ div.wrapper {
         }
     }
     div.area4 {
+        text-align: center;
+        font-family: $f-m;
+        font-size: 12px;
+        line-height: 18px;
+        padding-bottom: 60px;
 
+        h2 {
+            text-align: left;
+        }
+
+        div.address {
+            padding-top: 80px;
+            background: url('../img/mobile/icon_indicator.png') 50% 40px no-repeat;
+            -webkit-background-size: 25px auto;
+            background-size: 25px auto;
+        }    
+        div.hours {
+            padding-top: 80px;
+            background: url('../img/mobile/icon_watch.png') 50% 40px no-repeat;
+            -webkit-background-size: 25px auto;
+            background-size: 25px auto;
+        }    
+        div.reserve div.f {
+            float: left;
+            width: 50%;
+            padding-top: 80px;
+            background: url('../img/mobile/icon_phone.png') 50% 40px no-repeat;
+            -webkit-background-size: 25px auto;
+            background-size: 25px auto;
+        }    
+        div.reserve div.s {
+            float: left;
+            width: 50%;
+            padding-top: 80px;
+            background: url('../img/mobile/icon_insta.png') 50% 40px no-repeat;
+            -webkit-background-size: 25px auto;
+            background-size: 25px auto;
+
+            a  {
+                text-decoration: underline;
+                color: #333;
+            }
+        }    
+    }
+    div.map-area {
+        padding: 0 25px 100px 25px;
+        img {width: 100%;}
     }
 }
 
@@ -129,13 +178,32 @@ header {
         width: 100%;
         height: 60px;
         top: -60px; left: 0;
-        background: gray;
         -webkit-transition: top .3s ease-in-out; 
         transition: top .3s ease-in-out; 
         z-index: 10;
+        text-align: center;
 
         &.scrolled {
             top: 0;
+        }
+
+        a {
+            display: inline-block;
+            font-size: 14px;
+            padding: 0 16px;
+            font-family: $f-m;
+            color: #222;
+        }
+        &> div.f {
+            position: absolute;
+            width: 100%;
+            padding-top: 17px;
+            z-index: 1;
+        }
+        &> div.s {
+            width: 100%; height: 60px;
+            background: #fff; 
+            opacity: .5;
         }
     }
 }
@@ -151,6 +219,7 @@ footer {
     text-align: center;
     line-height: 16px;
     padding-top: 42px;
+    font-family: $f-m;
 
     span.copy {
         display: inline-block;
@@ -169,3 +238,5 @@ footer {
 *:focus {
     outline: none;
 }
+
+.border {border: 1px solid red;}

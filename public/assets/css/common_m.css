@@ -270,23 +270,26 @@ div.wrapper {
     line-height: 20px;
     font-size: 13px;
     color: #333;
-    padding: 41px 20px 56px 0; }
-  div.wrapper div.area2 p.tt1 {
-    font-size: 14px;
-    padding: 45px 25px 32px 25px; }
-  div.wrapper div.area2 p.ct1 {
-    font-size: 12px;
-    padding: 0 25px 0 25px;
-    line-height: 18px; }
-  div.wrapper div.area2 p.ct2 {
-    font-size: 12px;
-    padding: 30px 25px 0 25px;
-    line-height: 18px; }
-  div.wrapper div.area2 p.ct3 {
-    font-size: 12px;
-    padding: 30px 25px 70px 25px;
-    line-height: 18px; }
+    padding: 41px 20px 0px 0; }
+  div.wrapper div.area2 {
+    padding-top: 56px; }
+    div.wrapper div.area2 p.tt1 {
+      font-size: 14px;
+      padding: 45px 25px 32px 25px; }
+    div.wrapper div.area2 p.ct1 {
+      font-size: 12px;
+      padding: 0 25px 0 25px;
+      line-height: 18px; }
+    div.wrapper div.area2 p.ct2 {
+      font-size: 12px;
+      padding: 30px 25px 0 25px;
+      line-height: 18px; }
+    div.wrapper div.area2 p.ct3 {
+      font-size: 12px;
+      padding: 30px 25px 0px 25px;
+      line-height: 18px; }
   div.wrapper div.area3 {
+    padding-top: 70px;
     padding-bottom: 70px; }
     div.wrapper div.area3 p.tt1 {
       font-size: 14px;
@@ -306,6 +309,45 @@ div.wrapper {
     div.wrapper div.area3 p.ct4 {
       font-size: 12px;
       padding: 15px 25px 0 25px; }
+  div.wrapper div.area4 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 60px; }
+    div.wrapper div.area4 h2 {
+      text-align: left; }
+    div.wrapper div.area4 div.address {
+      padding-top: 80px;
+      background: url("../img/mobile/icon_indicator.png") 50% 40px no-repeat;
+      -webkit-background-size: 25px auto;
+      background-size: 25px auto; }
+    div.wrapper div.area4 div.hours {
+      padding-top: 80px;
+      background: url("../img/mobile/icon_watch.png") 50% 40px no-repeat;
+      -webkit-background-size: 25px auto;
+      background-size: 25px auto; }
+    div.wrapper div.area4 div.reserve div.f {
+      float: left;
+      width: 50%;
+      padding-top: 80px;
+      background: url("../img/mobile/icon_phone.png") 50% 40px no-repeat;
+      -webkit-background-size: 25px auto;
+      background-size: 25px auto; }
+    div.wrapper div.area4 div.reserve div.s {
+      float: left;
+      width: 50%;
+      padding-top: 80px;
+      background: url("../img/mobile/icon_insta.png") 50% 40px no-repeat;
+      -webkit-background-size: 25px auto;
+      background-size: 25px auto; }
+      div.wrapper div.area4 div.reserve div.s a {
+        text-decoration: underline;
+        color: #333; }
+  div.wrapper div.map-area {
+    padding: 0 25px 100px 25px; }
+    div.wrapper div.map-area img {
+      width: 100%; }
 
 /********************** 
 * header
@@ -335,12 +377,28 @@ header {
     height: 60px;
     top: -60px;
     left: 0;
-    background: gray;
     -webkit-transition: top .3s ease-in-out;
     transition: top .3s ease-in-out;
-    z-index: 10; }
+    z-index: 10;
+    text-align: center; }
     header div.fixed-nav.scrolled {
       top: 0; }
+    header div.fixed-nav a {
+      display: inline-block;
+      font-size: 14px;
+      padding: 0 16px;
+      font-family: "Montserrat", sans-serif;
+      color: #222; }
+    header div.fixed-nav > div.f {
+      position: absolute;
+      width: 100%;
+      padding-top: 17px;
+      z-index: 1; }
+    header div.fixed-nav > div.s {
+      width: 100%;
+      height: 60px;
+      background: #fff;
+      opacity: .5; }
 
 /********************** 
 * footer
@@ -352,7 +410,8 @@ footer {
   font-size: 10px;
   text-align: center;
   line-height: 16px;
-  padding-top: 42px; }
+  padding-top: 42px;
+  font-family: "Montserrat", sans-serif; }
   footer span.copy {
     display: inline-block;
     width: 80px;
@@ -367,3 +426,6 @@ footer {
 ***********************/
 *:focus {
   outline: none; }
+
+.border {
+  border: 1px solid red; }

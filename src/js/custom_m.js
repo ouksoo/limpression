@@ -5,7 +5,7 @@ let LIM = {
     },
     scollDown: function() {
         let scrolled = $(document).scrollTop();
-        if(scrolled > 60) {
+        if(scrolled > 80) {
             $('.fixed-nav').addClass('scrolled');
         }
         else {
@@ -23,9 +23,8 @@ let LIM = {
         });
     },
     moveToId: function() {
-        $('.fixed-nav a').on('click', function(e){
+        $('header a').on('click', function(e){
             const thisAnchor = $(this).attr('id');
-            // console.log(thisAnchor);
             LIM.moveToAnchor(thisAnchor);
             e.preventDefault();
         });

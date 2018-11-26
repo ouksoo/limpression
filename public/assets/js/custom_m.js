@@ -7,7 +7,7 @@ var LIM = {
     },
     scollDown: function scollDown() {
         var scrolled = $(document).scrollTop();
-        if (scrolled > 60) {
+        if (scrolled > 80) {
             $('.fixed-nav').addClass('scrolled');
         } else {
             $('.fixed-nav').removeClass('scrolled');
@@ -24,9 +24,8 @@ var LIM = {
         });
     },
     moveToId: function moveToId() {
-        $('.fixed-nav a').on('click', function (e) {
+        $('header a').on('click', function (e) {
             var thisAnchor = $(this).attr('id');
-            // console.log(thisAnchor);
             LIM.moveToAnchor(thisAnchor);
             e.preventDefault();
         });
