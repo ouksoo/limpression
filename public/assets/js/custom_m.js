@@ -7,7 +7,7 @@ var LIM = {
     },
     scollDown: function scollDown() {
         var scrolled = $(document).scrollTop();
-        if (scrolled > 0) {
+        if (scrolled > 60) {
             $('.fixed-nav').addClass('scrolled');
         } else {
             $('.fixed-nav').removeClass('scrolled');

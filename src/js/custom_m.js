@@ -5,7 +5,7 @@ let LIM = {
     },
     scollDown: function() {
         let scrolled = $(document).scrollTop();
-        if(scrolled > 0) {
+        if(scrolled > 60) {
             $('.fixed-nav').addClass('scrolled');
         }
         else {

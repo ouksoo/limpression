@@ -310,35 +310,37 @@ div.wrapper {
 /********************** 
 * header
 ***********************/
-header div.nav {
-  text-align: center; }
-  header div.nav h1 {
-    width: 94px;
-    height: 73px;
-    text-indent: -9999px;
-    background: url("../img/mobile/logo.png") 0 25px no-repeat;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    margin: 0 auto; }
-  header div.nav a {
-    display: inline-block;
-    font-size: 14px;
-    padding: 0 10px;
-    font-family: "Montserrat", sans-serif;
-    color: #222; }
-
-header div.fixed-nav {
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  top: -60px;
-  left: 0;
-  background: gray;
-  -webkit-transition: top .3s ease-in-out;
-  transition: top .3s ease-in-out;
-  z-index: 10; }
-  header div.fixed-nav.scrolled {
-    top: 0; }
+header {
+  position: absolute;
+  width: 100%; }
+  header div.nav {
+    text-align: center; }
+    header div.nav h1 {
+      width: 94px;
+      height: 73px;
+      text-indent: -9999px;
+      background: url("../img/mobile/logo.png") 0 25px no-repeat;
+      -webkit-background-size: 100% auto;
+      background-size: 100% auto;
+      margin: 0 auto; }
+    header div.nav a {
+      display: inline-block;
+      font-size: 14px;
+      padding: 0 10px;
+      font-family: "Montserrat", sans-serif;
+      color: #222; }
+  header div.fixed-nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: -60px;
+    left: 0;
+    background: gray;
+    -webkit-transition: top .3s ease-in-out;
+    transition: top .3s ease-in-out;
+    z-index: 10; }
+    header div.fixed-nav.scrolled {
+      top: 0; }
 
 /********************** 
 * footer
