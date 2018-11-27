@@ -6,8 +6,17 @@
 <title></title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
-<link href="assets/css/common_m.css" rel="stylesheet">
+<meta name="format-detection" content="telephone=no" />
+<link href="../assets/css/common_m.css" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+const filter = 'win16|win32|win64|mac|macintel';
+if( navigator.platform ) {
+    if ( filter.indexOf(navigator.platform.toLowerCase()) > 0) {
+        location.href = '/limpress/';
+    }
+}
+</script>
 </head>
 <body>
     
@@ -31,7 +40,7 @@
     <!-- section -->
     <section>
         <div class="area1">
-            <div class="inner-img"><img src="assets/img/mobile/img_1.png" alt="" /></div>
+            <div class="inner-img"><img src="../assets/img/mobile/img_1.png" alt="" /></div>
             <p>
                 임프레션의 철학과 영감, 그리고 열정이 <br />
                 녹아 든 최고의 식사를 통해 기억에 남을 특별한 <br />
@@ -41,7 +50,7 @@
         </div>
         <div class="area2" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="700">
             <h2 class="sub-tit">about</h2>
-            <div class="inner-img"><img src="assets/img/mobile/img_2.png" alt="" /></div>
+            <div class="inner-img"><img src="../assets/img/mobile/img_2.png" alt="" /></div>
             <p class="tt1 en">Welcome to L'Impression</p>
             <p class="ct1 en">
                 Respecting ingredients from local terroir and the heritage of Korean gastronomy,<br />
@@ -70,7 +79,7 @@
         </div>
         <div class="area3" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="700">
             <h2 class="sub-tit">menu</h2>
-            <div class="inner-img"><img src="assets/img/mobile/img_3.png" alt="" /></div>
+            <div class="inner-img"><img src="../assets/img/mobile/img_3.png" alt="" /></div>
             <p class="tt1 en">Menu L'Impression</p>
             <p class="ct1 en">
                 Tasting menu focused on aging and fermentation featuring locally sourced seasonal ingredients
@@ -92,7 +101,7 @@
         </div>
         <div class="area4" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="700">
             <h2 class="sub-tit">location</h2>
-            <div class="inner-img"><img src="assets/img/mobile/img_4.png" alt="" /></div>
+            <div class="inner-img"><img src="../assets/img/mobile/img_4.png" alt="" /></div>
 
             <div class="address">
                 <span class="spot-1">Address</span>
@@ -112,7 +121,7 @@
         </div>
 
         <div class="map-area" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="700">
-            <div id="corelle-location"><img src="assets/img/mobile/map_sample.png" alt="" width="100%" /></div>
+            <div id="corelle-location"><img src="../assets/img/mobile/map_sample.png" alt="" width="100%" /></div>
         </div>
     </section>
 
@@ -127,7 +136,7 @@
 <!--<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=1hLrIsOUHkXF_ACFBIIy&submodules=geocoder"></script>-->
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="assets/js/custom_m.js"></script>
+<script src="../assets/js/custom_m.js"></script>
 <script>
 // var mapOptions = {
 //     center: new naver.maps.LatLng(37.5077098, 127.0620395),

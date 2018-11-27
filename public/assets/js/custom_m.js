@@ -4,6 +4,12 @@ var LIM = {
     init: function init() {
         this.skyScrapper();
         this.moveToId();
+        this.linksDefault();
+    },
+    linksDefault: function linksDefault() {
+        $('h1').on('click', function () {
+            location.href = '/m/';
+        });
     },
     scollDown: function scollDown() {
         var scrolled = $(document).scrollTop();

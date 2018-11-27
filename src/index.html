@@ -8,6 +8,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
 <link href="assets/css/common.css" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+const filter = 'win16|win32|win64|mac|macintel';
+if( navigator.platform ) {
+    if ( filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+        location.href = '/limpress/m/';
+    }
+}
+</script>
 </head>
 <body>
     

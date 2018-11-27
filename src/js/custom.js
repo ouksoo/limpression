@@ -2,6 +2,12 @@ let LIM = {
     init: function() {
         this.skyScrapper();
         this.moveToId();
+        this.linksDefault();
+    },
+    linksDefault: function() {
+        $('h1').on('click', function(){
+            location.href = '/';
+        });
     },
     scollDown: function() {
         let scrolled = $(document).scrollTop();
